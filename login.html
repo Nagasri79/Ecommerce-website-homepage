@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,86 +15,47 @@
     <a href="#"> <img src="img/logo.svg" class="logo" width="150"height="150" alt=""></a>
     <div>
         <ul id="navbar">
-            
+            <li><a class="active" href="login.html">Login</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">shop</a></li>
-            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact </a></li>
-            <li><a class="active" href="cart.html" ><i class="fa-solid fa-cart-shopping"></i></i></a></li>
+            <li><a href="cart.html" ><i class="fa-solid fa-cart-shopping"></i></i></a></li>
         </ul>
         </div>
     </section>
-<section id="contactheader" class="section-p1">
-            <h2>#Let's_Talk</h2>
-            <p>LEAVE A MESSAGE, We love to hear from you</p>
-    
-</section> 
-<section id="cart" class="section-p1">
-    <table width="100%">
-        <thead>
-            <tr>
-                <td>Remove</td>
-                <td>Image</td>
-                <td>Product</td>
-                <td>Price</td>
-                <td>Quantity</td>
-                <td>Subtotal</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                <td><img src="img/product1.png" alt=""></td>
-                <td>khadi cotton HD printed saree</td>
-                <td>$76</td>
-                <td><input type="number" value="1"></td>
-                <td>$76</td>
-            </tr>
-            <tr>
-                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                <td><img src="img/product2.png" alt=""></td>
-                <td>khadi cotton patterned saree</td>
-                <td>$90</td>
-                <td><input type="number" value="1"></td>
-                <td>$90</td>
-            </tr>
-            <tr>
-                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                <td><img src="img/product10.png" alt=""></td>
-                <td>khadi cotton HD printed saree</td>
-                <td>$90</td>
-                <td><input type="number" value="1"></td>
-                <td>$90</td>
-            </tr>
-        </tbody>
-    </table>
+ <section id="login">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="E-mail">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button class="submit"  onclick="window.location.href='index.html';">Login</button>
+        </form>
+    </div>
+</section>
+        
 
-</section>
-<section id="cart-add" class="section-p1">
-    <div id="coupon">
-        <h3>Apply Coupon</h3>
-        <div>
-        <input type="text" placeholder="Enter Your Coupon">
-        <button class="normal">Apply</button>
-        </div>
-    </div>
-    <div id="subtotal">
-        <h3>Cart Total</h3>
-        <table>
-            <tr>
-                <td>Cart Subtotal</td>
-                <td>$ 356</td>
-            </tr>
-            <tr>
-                <td>Shipping</td>
-                <td>free</td>
-            </tr>
-        </table>
-        <button class="normal" onclick="window.location.href='payment.html';">Proceed to checkout</button>
-    </div>
-</section>
-<footer class="section-p1">
+
+        <section id="newsletter" class="section-p1" class="section-m1">
+            <div class="newstext">
+                <h4>Sign Up For Newsletters</h4>
+                <p> Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <input type="text" name="Your email address" placeholder="Your email address">
+                <button class="normal">SignUp</button>
+    
+            </div>
+        </section>
+    <footer class="section-p1">
         <div class="col">
             <img  class="logo" src="img/logo.svg" width="80" height="80">
             <h4>Contact</h4>
