@@ -1,60 +1,48 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce website</title>
-    <link rel="stylesheet" href="style.css">
-
-
-
-
-</head>
-
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section id="header">
-    
-        <a href="#"> <img src="img/logo.svg" class="logo" width="150" height="150" alt="" ></a>
+        <a href="#"> <img src= "img/logo.svg" class="logo" width="150"height="150" alt=""></a>
         <div>
             <ul id="navbar">
-                <li><a class="active" href="login.html">Login</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="Blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact </a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="searh.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="cart.html" ><i class="fa-solid fa-cart-shopping"></i></i></a></li>
+                <li><a class="active" href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
-        </div>
-    </section>
-    <section id="login">
-        <div class="login-container">
-            <h2>Login</h2>
-            <div class="input-group">
-            
-                    Username<input type="email" id="email" name="email" placeholder="" required>
-                    </div>
-
-                
-            <div class="input-group">
-
-                    Password<input type="password" id="password" name="password" placeholder="Enter Your Password" required>
-                </div>
-                
-                <div class="normal">
-                    <button onclick="window.location.href='index.html';">Login</button>
-                    
-                </div>
-
-            
-        </div>
-    </section>
-
-
-
+            </div>
+        </section>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button onclick="window.location.href='shop.html'">Printed sarees</button>
+        <button onclick="window.location.href='index.html'">Trending collection</button>
+        <button onclick="window.location.href='about.html'">About</button>
+      </div>
+      <div id="products"></div>
+    </div>
     <section id="newsletter" class="section-p1" class="section-m1">
         <div class="newstext">
             <h4>Sign Up For Newsletters</h4>
@@ -116,7 +104,7 @@
             <div class="row">
                 <img src="img/app.jpg" alt="">
                 <img src="img/play.jpg" alt="">
-
+                
 
 
             </div>
@@ -124,20 +112,12 @@
             <img src="img/pay.png" alt="">
         </div>
         <div class="copyright">
-            <p> &copy; 2024, Tech-HTML CSS Ecommerce Template </p>
+        <p> &copy; 2024, Tech-HTML CSS Ecommerce Template </p>
         </div>
 
     </footer>
-
-
-
-
-    <script src="javascript.js"></script>
-    
+    <!-- Script -->
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/f4850f8c7b.js" crossorigin="anonymous"></script>
-    
-
-
-</body>
-
+  </body>
 </html>
